@@ -1,3 +1,136 @@
 *{
-    background-color:#54ecc6c7;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    background-color:#ffffff;
+}
+
+.menu{
+    background-color:#58b3ac;
+    padding: 1rem;
+}
+
+img{
+    border-width: 10px;
+    border-style: solid;
+    border-color: #58b3ac;
+    border-radius: 50%;
+    float: left;
+}
+
+a{
+    padding: 1rem;
+    margin: .5rem;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: arial;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aquamarine;
+    text-shadow: 5px 5px 10px #448b86;
+}
+
+.adorno{
+    padding: 3rem;
+    position: static;
+    background-color: rgb(65, 231, 181);
+}
+
+.datos{
+    height: 320px;
+    width: 50%;
+    float: left;
+}
+
+.datos h1{
+    font-size: 50px;
+    color: #58b3ac;
+}
+
+.datos p{
+    margin: 1rem;
+    text-align: left;
+    font-size: 25px;
+    color: #4ad1c6;
+}
+
+.escolaridad{
+    background-color: rgb(65, 231, 181);
+    height: 320px;
+    width: 50%;
+    float: right;
+}
+
+.escolaridad h1{
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.escolaridad p{
+    margin: 1rem;
+    text-align: left;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.cursos{
+    background-color: rgb(255, 255, 255);
+}
+
+.cursos h1{
+    font-size: 50px;
+    color: #58b3ac;
+}
+
+
+.cursos li{
+    margin: 1rem;
+    float: center;
+    font-size: 25px;
+    color: #58b3ac;
+}
+
+.hobbies, .skills{
+    background-color: rgb(65, 231, 181);
+}
+
+.hobbies h1, .skills h1{
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.hobbies{
+    width: 50%;
+    float: left;
+}
+
+.skills{
+    width: 50%;
+    float: right;
+}
+
+.skills ul{
+    list-style-type: none;
+}
+
+.hobbies li, .skills li{
+    margin: 1rem;
+    float: center;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+footer{
+    background-color: #58b3ac;
+    color: azure;
+    text-align: center;   
+    font-size: 25px;
+    font-family: arial;
+    text-decoration: none;
 }
