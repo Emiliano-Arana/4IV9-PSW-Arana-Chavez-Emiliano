@@ -1,0 +1,167 @@
+*{
+    padding: 3px;
+}
+
+body{
+    background-image: url(../Images/FondoPHG.jPG);
+}
+
+header{
+    background-color: #cebb4e;
+}
+
+header .titulo{
+    text-align: center;
+    color: aliceblue;
+    padding: 0;
+}
+
+nav{
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav ol{
+    padding: 0;
+    list-style: none;
+}
+
+nav ol li {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+}
+
+nav ol li:hover{
+    background: rgb(224, 224, 116);
+}
+
+nav ol li a{
+    text-decoration: none;
+    padding: .5rem;
+    color: rgb(181, 211, 224);
+    display: block;
+}
+
+.general-container{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+img{
+    height: 300px;
+    width: 533px;
+    float: left;
+    position: relative;
+}
+
+h2{
+    color: aliceblue;
+}
+
+p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.General{
+    background-color: #cebb4ec4;
+    text-align: justify;
+}
+
+.main-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.left-container, .middle-container, .right-container{
+    width: 100%;
+    margin-top: 5px;
+}
+
+.video{
+    margin-top: 5px;
+    width: fit-content;
+}
+
+.top-container{
+    margin-bottom: 5px;
+}
+
+.left-container, .top-container, .bottom-container, .right-container, .video{
+    background-color: #cebb4ec4;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: #cebb4e;
+    margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+    .left-container {
+        width: 40%;
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    .middle-container {
+        margin-left: 5px;
+        width: 55%;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .right-container {
+        width: 100%;
+        -webkit-order: 3;
+        order: 3;
+    }
+
+    .video {
+        width: fit-content;
+        -webkit-order: 4;
+        order: 4;
+    }
+}
+
+@media (min-width: 1400px) {
+    .imagen{
+        width: 40%;
+    }
+
+    .General{
+        width: 45%;
+    }
+
+    .left-container {
+        width: 25%;
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    .middle-container {
+        width: 40%;
+        -webkit-order: 2;
+        order: 2;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .right-container {
+        width: 25%;
+        -webkit-order: 3;
+        order: 3;
+    }
+}
