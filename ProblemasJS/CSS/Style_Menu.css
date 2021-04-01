@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: orange;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 5px 5px 10px rgb(185, 122, 6);
+}
+
