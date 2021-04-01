@@ -10,5 +10,19 @@ header{
     text-align: center;
     color: aliceblue;
     text-shadow: 5px 5px 10px rgb(185, 122, 6);
+    padding: .5rem;
 }
 
+ul{
+    list-style: none;
+}
+
+.izquierda{
+    float: left;
+    width: 45%;
+}
+
+.derecha{
+    float: right;
+    width: 45%;
+}
