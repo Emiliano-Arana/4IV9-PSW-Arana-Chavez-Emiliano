@@ -7,10 +7,12 @@
 header{
     background-color: orange;
     height: 50px;
-    width: 100%;
+    width: 90%;
     text-align: center;
     text-shadow: 5px 5px 10px rgb(185, 122, 6);
     padding: .5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ul{
@@ -22,6 +24,7 @@ ul{
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    width: 200px;
 }
 
 .main-container{
@@ -38,6 +41,15 @@ p{
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+}
+
+p:hover{
+    background-color: rgb(240, 189, 95);
+    text-shadow: 5px 5px 10px rgb(185, 122, 6);
+    font-size: 30px;
 }
 
 .izquierda{
@@ -46,4 +58,28 @@ p{
 
 .derecha{
     float: right;
+}
+
+.down{
+    width: 100%;
+}
+
+footer{
+    background-color: orange;
+    width: 100%;
+    height: fit-content;
+    bottom: 0%;
+    position: absolute;
+}
+
+#nombre{
+    font-size: 18px;
+    float: left;
+    padding: 8px;
+}
+
+#grupo{
+    font-size: 18px;
+    float: right;
+    padding: 8px;
 }
