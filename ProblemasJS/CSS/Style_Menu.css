@@ -46,6 +46,10 @@ p{
     display: block;
 }
 
+a{
+    text-decoration: none;
+}
+
 p:hover{
     background-color: rgb(240, 189, 95);
     text-shadow: 5px 5px 10px rgb(185, 122, 6);

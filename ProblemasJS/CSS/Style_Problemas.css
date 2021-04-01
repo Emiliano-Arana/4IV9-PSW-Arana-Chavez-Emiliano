@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: aliceblue;
+}
+
+header{
+    background-color: orange;
+    height: 50px;
+    width: 90%;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgb(185, 122, 6);
+    padding: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
