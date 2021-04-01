@@ -37,20 +37,17 @@ aside{
     padding: 1rem;
 }
 
-p{
+a{
+    text-decoration: none;
+    display: block;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
-    display: block;
 }
 
-a{
-    text-decoration: none;
-}
-
-p:hover{
+a:hover{
     background-color: rgb(240, 189, 95);
     text-shadow: 5px 5px 10px rgb(185, 122, 6);
     font-size: 30px;
@@ -73,12 +70,14 @@ footer{
 }
 
 #nombre{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     float: left;
     padding: 8px;
 }
 
 #grupo{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     float: right;
     padding: 8px;

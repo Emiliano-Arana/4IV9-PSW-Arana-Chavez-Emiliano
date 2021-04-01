@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/Style_Problemas.css">
+    <script src="./JS/Problema01.js" ></script>
     <title>Problema 1</title>
 </head>
 <body>
     <header>
         <h1>Problema 1</h1>
     </header>
+    <form method="get" name="formulario" action="problema01.html">
+        <table align="center">
+            <tr>
+                <td class="col_iz">Introduce la cantidad a invertir</td>
+                <td class="col_de"><input class="cam_textE" type="text" name="cantidad" onkeypress="return validar(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="col_de"> <input class="boton" type="button" name="enviar" value="Calcular" onclick="interes()"> </td>
+            </tr>
+            <tr>
+                <td class="col_iz">El dinero que ganara despues de un mes es:</td>
+                <td class="col_de"><input class="cam_textI" type="text" name="total" readonly="readonly"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="col_de"><input class="boton" type="button" name="borrarC" value="Borrar" onclick="borrar()"></td>
+            </tr>
+        </table>
+    </form>
     <footer>
         <p id="nombre">Arana Chávez Emiliano</p><a href="Menu.html" id="regresar">Regresar</a><p id="grupo">4IV9</p>
     </footer>
