@@ -66,7 +66,7 @@ function calcular(){
                             alert("No se puede poner mas de 1 punto en la cantidad");
                         }else{
                             var califFinal = (((parseFloat(cali1)+parseFloat(cali2)+parseFloat(cali3))/3)*.55)+(parseFloat(caliEx)*.3)+(parseFloat(caliTra)*.15);
-                            document.formulario.calFinal.value="$"+califFinal;
+                            document.formulario.calFinal.value=califFinal;
                         }
                     }
                 }
