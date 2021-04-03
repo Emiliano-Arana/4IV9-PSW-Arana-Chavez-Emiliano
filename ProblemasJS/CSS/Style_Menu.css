@@ -4,6 +4,10 @@
     color: aliceblue;
 }
 
+body{
+    background-color: bisque;
+}
+
 header{
     background-color: orange;
     height: 50px;
