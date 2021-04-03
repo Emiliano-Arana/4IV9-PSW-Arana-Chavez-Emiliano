@@ -8,6 +8,10 @@ function validar(e){
 
 function calcular(){
     var costo = document.formulario.costo.value;
+    if(costo==""){
+        alert("Necesitas llenar todos los campos de texto");
+        calcular.break();
+    }
     var count=0;
     for(var i=0;i<costo.length;i++){
         if(costo.charAt(i)=="."){

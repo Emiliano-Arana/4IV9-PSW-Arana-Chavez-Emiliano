@@ -14,6 +14,11 @@ function calcular(){
     var ma = parseInt(document.formulario.mesActual.value);
     var aa = parseInt(document.formulario.anoActual.value);
 
+    if(isNaN(dn)||isNaN(mn)||isNaN(an)||isNaN(da)||isNaN(ma)||isNaN(aa)){
+        alert("Necesitas llenar todos los campos de texto");
+        calcular.break();
+    }
+
     if(dn==0||mn==0||an==0||da==0||ma==0||aa==0){
         alert("No hay ceros en las fechas");
         calcular.break();

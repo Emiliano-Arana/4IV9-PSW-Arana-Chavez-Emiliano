@@ -12,6 +12,10 @@ function calcular(){
     var cali3 = document.formulario.cal3.value;
     var caliEx = document.formulario.calEx.value;
     var caliTra = document.formulario.calTra.value;
+    if(cali1==""||cali2==""||cali3==""||caliEx==""||caliTra==""){
+        alert("Necesitas llenar todos los campos de texto");
+        calcular.break();
+    }
     if(parseFloat(cali1)>10||parseFloat(cali2)>10||parseFloat(cali3)>10||parseFloat(caliEx)>10||parseFloat(caliTra)>10){
         alert("Las calificaciones son del 0-10");
         document.formulario.cal1.value="";

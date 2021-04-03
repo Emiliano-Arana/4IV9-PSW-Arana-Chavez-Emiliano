@@ -8,6 +8,10 @@ function validar(e){
 
 function interes(){
     var valor = document.formulario.cantidad.value;
+    if(valor==""){
+        alert("Necesitas llenar todos los campos de texto");
+        interes.break();
+    }
     var count=0;
     for(var i=0;i<valor.length;i++){
         if(valor.charAt(i)=="."){

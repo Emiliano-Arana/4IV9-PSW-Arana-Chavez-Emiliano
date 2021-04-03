@@ -17,6 +17,12 @@ function validarInt(e){
 function calcular(){
     var sueldo = document.formulario.sueldo.value;
     var horas = parseInt(document.formulario.horas.value);
+
+    if(sueldo==""||isNaN(horas)){
+        alert("Necesitas llenar todos los campos de texto");
+        calcular.break();
+    }
+
     var count = 0;
     for(var i=0;i<sueldo.length;i++){
         if(sueldo.charAt(i)=="."){

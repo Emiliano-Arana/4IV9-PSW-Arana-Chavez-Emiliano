@@ -9,6 +9,12 @@ function validar(e){
 function calcular(){
     var an = document.formulario.anos.value;
     var salario = document.formulario.salario.value;
+
+    if(an==""||salario==""){
+        alert("Necesitas llenar todos los campos de texto");
+        calcular.break();
+    }
+
     var count = 0;
     for(var i=0;i<an.length;i++){
         if(an.charAt(i)=="."){

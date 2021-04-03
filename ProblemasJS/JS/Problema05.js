@@ -9,6 +9,10 @@ function validarInt(e){
 function calcular(){
     var h = document.formulario.hombres.value;
     var m = document.formulario.mujeres.value;
+    if(h==""||m==""){
+        alert("Necesitas llenar todos los campos de texto");
+        calcular.break();
+    }
 
     var ph = parseInt(h)*100/(parseInt(h)+parseInt(m));
     var pm = parseInt(m)*100/(parseInt(h)+parseInt(m));

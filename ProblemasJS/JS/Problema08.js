@@ -10,8 +10,13 @@ function calcular(){
     var a = document.formulario.num1.value;
     var b = document.formulario.num2.value;
     var c = document.formulario.num3.value;
-    var count = 0;
 
+    if(a==""||b==""||c==""){
+        alert("Necesitas llenar todos los campos de texto");
+        calcular.break();
+    }
+
+    var count = 0;
     if(a==b||a==c||b==c){
         alert("Los numeros no son diferentes");
         calcular.break();

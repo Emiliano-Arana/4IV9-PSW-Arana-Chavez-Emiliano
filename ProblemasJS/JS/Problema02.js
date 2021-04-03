@@ -16,6 +16,11 @@ function validarInt(e){
 
 function calcular(){
     var sueld = document.formulario.sueldo.value;
+    var venta = document.formulario.ventas.value;
+    if(sueld==""||venta==""){
+        alert("Necesitas llenar todos los campos de texto");
+        calcular.break();
+    }
     var count = 0;
     for(var i=0;i<sueld.length;i++){
         if(sueld.charAt(i)=="."){
@@ -25,7 +30,6 @@ function calcular(){
     if(count>1){
         alert("No se puede poner mas de 1 punto en el campo de texto");
     }else{
-        var venta = document.formulario.ventas.value;
         var comi = (parseFloat(sueld)*.1)*parseInt(venta);
         var total = comi + parseFloat(sueld);
         document.formulario.comisiones.value="$"+comi;
