@@ -95,28 +95,39 @@ function problema3(){
         }
     }
     if(cont==text.length){
-        var cuenta = 0;
         var words = text.split(",");
         var carUn = new Array(words.length);
+        for(var i=0;i<carUn.length;i++){
+            carUn[i] = 0;
+        }
+        var carUnWord = new Array(car.length);
         for(var i=0;i<words.length;i++){
-            var word = words[i];
-            var letras = new Array(word.length);
-            for(var k=0;k<word.length;k++){
-                for(var j=0;j<letras.length;j++){
-                    if(word[k]==letras[j]){
-                        cuenta = 0;
-                        break;
-                    }else{
-                        cuenta += 1;
+            var wor = words[i];
+            for(var k=0;k<carUnWord.length;k++){
+                carUnWord[k] = 0;
+            }
+            for(var k=0;k<car.length;k++){
+                for(var j=0;j<wor.length;j++){
+                    if(wor[j]==car[k]){
+                        carUnWord[k] += 1;
                     }
                 }
-                if()
             }
-            carUn[i] = letras.length;
+            for(var k=0;k<carUnWord.length;k++){
+                if(carUnWord[k]>0){
+                    carUn[i] += 1;
+                }
+            }
         }
+        var max = 0;
+        var index;
         for(var i=0;i<carUn.length;i++){
-            alert(carUn[i]+" "+i)
+            if(carUn[i]>max){
+                max = carUn[i];
+                index = i;
+            }
         }
+        document.querySelector('#p3-output').textContent = 'La palabra es: ' + words[index] + ', tiene '+ max +' caracteres unicos';
     }else{
         alert("Ingreso algún carácter no válido")
     }
