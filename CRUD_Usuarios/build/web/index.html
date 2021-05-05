@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registro de Usuarios</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/indexStyle.css">
+    </head>
+    <body>
+        <div class="container" >
+            <div class="contenedorRegistro" >
+                <h2>Registrar</h2>
+                <form method="post" name="formularioReg" 
+                      action="Register">
+                    <div class="container-campo">
+                        <label>Nombre: </label>
+                        <br>
+                        <input type="text" name="nombre" class="campo" onkeypress="return validar(event)">
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label>Apellido Paterno: </label>
+                        <br>
+                        <input type="text" name="appat" onkeypress="return validar(event)" class="campo">
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label>Apellido Materno: </label>
+                        <br>
+                        <input type="text" onkeypress="return validar(event)" name="apmat" class="campo">
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label>Edad: </label>
+                        <br>
+                        <input type="number" onkeypress="return validarNum(event)" name="edad" class="campo">
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label>Email: </label>
+                        <br>
+                        <input type="email" onkeypress="return validarMail(event)" name="correo" class="campo">
+                    </div>
+                    <br>
+                    <input type="submit" onclick="return validarDatosR()" value="Registrar Usuario" class="boton">
+                    <input type="reset" value="Borrar Datos" class="boton">
+                </form>
+                <form name="formularioConsultar" method="get" action="Consulta">
+                    <input type="submit" value="Consultar Tabla General de Usuarios" class="boton">
+                </form>
+            </div>
+            <div class="contenedorEliminar" >
+                <h2>Eliminar</h2>
+                <form name="formularioEliminar" method="post" action="Delete">
+                    <div class="container-campo">
+                        <label>Ingresa el ID del usuario a eliminar:</label>
+                        <br>
+                        <input type="text" name="ideliminar" class="campo">
+                    </div>
+                    <input type="submit" value="Eliminar Registro" class="boton">
+                </form>
+            </div>
+            <br>
+            <div class="contenedorActualizar" >
+                <h2>Actualizar</h2>
+                <form method="post" name="formularioAct" 
+                      action="Actualizar">
+                    <div class="container-campo">
+                        <label>ID:</label>
+                        <br>
+                        <input type="text" name="idact" onkeypress="return validarNum(event)" class="campo">
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label>Nombre: </label>
+                        <br>
+                        <input type="text" onkeypress="return validar(event)" name="nombre" class="campo">
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label>Apellido Paterno: </label>
+                        <br>
+                        <input type="text" onkeypress="return validar(event)" name="appat" class="campo">
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label>Apellido Materno: </label>
+                        <br>
+                        <input type="text" onkeypress="return validar(event)" name="apmat" class="campo">
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label>Edad: </label>
+                        <br>
+                        <input type="number" onkeypress="return validarNum(event)" name="edad" class="campo">
+                    </div>
+                    <br>
+                    <div class="container-campo">
+                        <label>Email: </label>
+                        <br>
+                        <input type="email" onkeypress="return validarMail(event)" name="correo" class="campo">
+                    </div>
+                    <br>
+                    <input onclick="return validarDatosA()" type="submit" value="Actualizar Usuario" class="boton">
+                    <input type="reset" value="Borrar Datos" class="boton">
+                </form>
+            </div>
+        </div>
+        <script src="validar.js"></script>
+    </body>
+</html>

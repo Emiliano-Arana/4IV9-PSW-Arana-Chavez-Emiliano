@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 5, 2021, 9:14:46 AM
+    Author     : Emiliano
+*/
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: arial;
+}
+
+a:hover{
+    color: blue;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: arial;
+}
